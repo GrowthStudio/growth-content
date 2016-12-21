@@ -6,20 +6,20 @@
 <p>在我开始接触架构设计的时候，我买了几本书然后我就开始学习了。我发现在这些书中都出现了一些相似的东西，如基本的分层设计、Pipe and Filters 模式、MVC 模式。然后，我开始意料到这些模式本身就是最好的架构。</p>
 <p>MVC 模式本身也是接于分层而设计的，如下图是 Spring MVC 的请求处理过程：</p>
 <div class="figure">
-<img src="assets/article/chapter8/spring-mvc.png" alt="Spring MVC" />
+<img src="assets/content/article/chapter8/spring-mvc.png" alt="Spring MVC" />
 <p class="caption">Spring MVC</p>
 </div>
 <p>而这个框架只是框架本身的架构，这一类也是我们预先设计好的框架。</p>
 <p>在框架之上，我们会有自己本身的业务所带来的模式。如下图是我的网上搜罗到的一个简单的发送邮件的架构：</p>
 <div class="figure">
-<img src="assets/article/chapter8/basic-paf.png" alt="发送邮件中的 Pipe and Filters 模式" />
+<img src="assets/content/article/chapter8/basic-paf.png" alt="发送邮件中的 Pipe and Filters 模式" />
 <p class="caption">发送邮件中的 Pipe and Filters 模式</p>
 </div>
 <p>这样的模式则是由业务发展的过程中演进出来的。</p>
 <h3 id="预设计式架构">预设计式架构</h3>
 <p>在我们日常使用的框架多数是预先设计的构架，因为这个架构本身的目标是明确的。系统会围绕一定的架构去构建，并且在这个过程中架构会帮助我们更好地理解系统。如下图所示的是 Emacs 的架构：</p>
 <div class="figure">
-<img src="assets/article/chapter8/emacs-architecture.png" alt="Emcas 架构" />
+<img src="assets/content/article/chapter8/emacs-architecture.png" alt="Emcas 架构" />
 <p class="caption">Emcas 架构</p>
 </div>
 <p>它采用的是交互式应用程序员应用广泛的模型-视图-控制器模式。</p>

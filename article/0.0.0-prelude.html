@@ -12,7 +12,7 @@
 <h4 id="cgi">CGI</h4>
 <p>二十年前的网站以静态的形式出现，这样的网站并不需要太多的人去维护、管理。接着，人们发明了 CGI (通用网关接口，英语：Common Gateway Interface)来实现动态的网站。下图是一个早期网站的架构图：</p>
 <div class="figure">
-<img src="assets/article/prelude/cgi-arch.gif" alt="CGI 网站架构" />
+<img src="assets/content/article/prelude/cgi-arch.gif" alt="CGI 网站架构" />
 <p class="caption">CGI 网站架构</p>
 </div>
 <p>当时这种网站的URL类似于：</p>
@@ -24,7 +24,7 @@
 <span class="kw">echo</span> hello,world</code></pre></div>
 <p>Blabla，各种代码混乱地夹杂在一起。不得不说一句：这样的代码在2012年，我也看了有一些。简单地来说，这个时代的代码结构就是这样的：</p>
 <div class="figure">
-<img src="assets/article/prelude/cgi-script.png" alt="CGI脚本文件" />
+<img src="assets/content/article/prelude/cgi-script.png" alt="CGI脚本文件" />
 <p class="caption">CGI脚本文件</p>
 </div>
 <p>这简直就是一场恶梦。不过，在今天好似那些 PHP 新手也是这样写代码的。</p>
@@ -32,56 +32,56 @@
 <h4 id="mvc架构">MVC架构</h4>
 <p>我有理由相信 Martin Fowler 的《企业应用架构模式》在当时一定非常受欢迎。代码从上面的耦合状态变成了：</p>
 <div class="figure">
-<img src="assets/article/prelude/caf_mvc_arch.png" alt="MVC 架构" />
+<img src="assets/content/article/prelude/caf_mvc_arch.png" alt="MVC 架构" />
 <p class="caption">MVC 架构</p>
 </div>
 <p>相似大家也已经对这样的架构很熟悉了，我们就不多解释了。如果你还不是非常了解的话，可以看看这本书后面的部分。</p>
 <h4 id="后台服务化与前端一致化架构">后台服务化与前端一致化架构</h4>
 <p>在今天看来，我们可以看到如下图所示的架构：</p>
 <div class="figure">
-<img src="assets/article/prelude/oneui-serviceful-arch.png" alt="后台服务化与前台一致化架构" />
+<img src="assets/content/article/prelude/oneui-serviceful-arch.png" alt="后台服务化与前台一致化架构" />
 <p class="caption">后台服务化与前台一致化架构</p>
 </div>
 <p>后台在不知不觉中已经被服务化了，即只提供API接口和服务。前端在这时已经尽量地和 APP 端在结合，使得他们可以保持一致。</p>
 <h3 id="软件开发的核心难题沟通">软件开发的核心难题：沟通</h3>
 <p>软件开发在过去的几十年里都是大公司的专利，小公司根本没有足够的能力去做这样的事。在计算机发明后的几十年里，开发软件是大公司才能做得起的。一般的非技术公司无法定制自己的软件系统，只能去购买现有的软件。而随着技术成本的下降，到了今天一般的小公司也可以雇佣一两个人来做同样的事。这样的演进过程还真是有意思：</p>
 <div class="figure">
-<img src="assets/article/prelude/develop-history.png" alt="开发演进" />
+<img src="assets/content/article/prelude/develop-history.png" alt="开发演进" />
 <p class="caption">开发演进</p>
 </div>
 <p>在这其中的每一个过程实质上都是为了解决沟通的问题。从瀑布到敏捷是为了解决组织内沟通的问题，从敏捷到精益不仅仅优化了组织内的沟通问题，还强化了与外部的关系。换句话说，精益结合了一部分的互联网思维。</p>
 <h4 id="瀑布式">瀑布式</h4>
 <p>在最开始的时候，我们预先设计好我们的功能，然后编码，在适当的时候发布我们的软件：</p>
 <div class="figure">
-<img src="assets/article/prelude/old-se.jpg" alt="预先式设计的瀑布流" />
+<img src="assets/content/article/prelude/old-se.jpg" alt="预先式设计的瀑布流" />
 <p class="caption">预先式设计的瀑布流</p>
 </div>
 <p>然而这种开发方式很难应对市场的变化——当我们花费了几年的时间开发出了一个软件，而这个软件是几年前人们才需要的。同时，由于软件开发本身的复杂度的限制，复制的系统在后期需要大量的系统集成工作。这样的集成工作可能要花费上大量的时间——几星期、几个月。</p>
 <div class="figure">
-<img src="assets/article/prelude/waterfall-process.png" alt="瀑布流的沟通模型" />
+<img src="assets/content/article/prelude/waterfall-process.png" alt="瀑布流的沟通模型" />
 <p class="caption">瀑布流的沟通模型</p>
 </div>
 <p>当人们意识到这个问题的时候，开始改进工作流程。出现了敏捷软件开发，这可以解释为什么产品经理会经常改需求。如果一个功能本身是没必要出现的话，那么为什么要花功夫去开发。但是如果一个功能在设计的初期就没有好好设计，那么改需求也是必然的。</p>
 <h4 id="敏捷式">敏捷式</h4>
 <p>现有的互联网公司的工作流程和敏捷软件开发在很多部分上是相似的，都有迭代、分析等等的过程：</p>
 <div class="figure">
-<img src="assets/article/prelude/scrum.png" alt="敏捷软件开发" />
+<img src="assets/content/article/prelude/scrum.png" alt="敏捷软件开发" />
 <p class="caption">敏捷软件开发</p>
 </div>
 <p>但是据我的所知：国内的多数互联网公司是不写测试的、没有 Code Review 等等。当然，这也不是一篇关于如何实践敏捷的文章。敏捷与瀑布式开发在很大的区别就是：沟通问题。传统的软件开发在调研完毕后就是分析、开发等等。而敏捷开发则会强调这个过程中的沟通问题：</p>
 <div class="figure">
-<img src="assets/article/prelude/scrum-communication.png" alt="敏捷软件开发的沟通模型" />
+<img src="assets/content/article/prelude/scrum-communication.png" alt="敏捷软件开发的沟通模型" />
 <p class="caption">敏捷软件开发的沟通模型</p>
 </div>
 <p>在整个过程中都不断地强调沟通问题，然而这时还存在一个问题：组织结构本身的问题。这样的组织结构，如下图所示：</p>
 <div class="figure">
-<img src="assets/article/prelude/scrum-issues.png" alt="组织结构" />
+<img src="assets/content/article/prelude/scrum-issues.png" alt="组织结构" />
 <p class="caption">组织结构</p>
 </div>
 <p>如果市场部门/产品经理没有与研发团队坐一起来分析问题，那么问题就多了。当一个需求在实现的过程中遇到问题，到底是哪个部门的问题？</p>
 <p>同样的如果我们的研发部门是这样子的结构：</p>
 <div class="figure">
-<img src="assets/article/prelude/tech-org.png" alt="研发部门" />
+<img src="assets/content/article/prelude/tech-org.png" alt="研发部门" />
 <p class="caption">研发部门</p>
 </div>
 <p>那么在研发、上线的过程中仍然会遇到各种的沟通问题。</p>
@@ -97,20 +97,20 @@
 <p>而不知你是否也注意到一点：专家们也在强调<strong>“一专多长”</strong>。因为单纯依靠于一个领域的技术而存在的专家已经很少了，技术专家们不得不依据于公司的需求去开拓不同的领域。毕竟“公司是指全部资本由股东出资构成，以营利为目的而依法设立的一种企业组织形式；”，管理人们假设技术本身是相通的，既然你在技术领域里有相当高的长板，那么进入一个新的技术也不是一件难的事。</p>
 <p>作为一个技术人员，我们是这个领域中的某个子领域专家。而作为这样一个专家，我们要扩展向另外一个领域的学习也不是一件很难的事。借鉴于我们先前的学习经验，我们可以很快的掌握这个新子域的知识。如我们所见，我们可以很快地补齐图中的短板：</p>
 <div class="figure">
-<img src="assets/article/prelude/bucket.jpg" alt="木桶" />
+<img src="assets/content/article/prelude/bucket.jpg" alt="木桶" />
 <p class="caption">木桶</p>
 </div>
 <p>在近来的探索中发现有一点非常有意思：如果依赖于20/80法则的话，那么成为专家和全栈的学习时间是相当的。在最开始的时候，我们要在我们的全栈工程和专家都在某个技术领域达到80分的水平。</p>
 <p>那么专家，还需要80%的时间去深入这个技术领域。而全栈工程师，则可以依赖于这80%的时候去开拓四个新的领域：</p>
 <div class="figure">
-<img src="assets/article/prelude/expert-vs-fullstack.png" alt="全栈与专家学习时间" />
+<img src="assets/content/article/prelude/expert-vs-fullstack.png" alt="全栈与专家学习时间" />
 <p class="caption">全栈与专家学习时间</p>
 </div>
 <p>尽管理论上是如此，但是专家存在跨领域的学习障碍——套用现有模式。而全栈也存在学习障碍——如何成为专家，但是懂得如何学习新的领域。</p>
 <h4 id="解决问题的思路不同的方式">解决问题的思路：不同的方式</h4>
 <p>有意思的是——成为专家还是成为全栈，取决于人的天性，这也是两种不同的性格决定的。成为管理者还是技术人员看上去就像一种简单的划分，而在技术人员里成为专家还是全栈就是另外一种划分。这取决于人们对于一个问题的思考方式：这件事情是借由外部来解决，还是由内部解决。下面这张图刚好可以表达我的想法：</p>
 <div class="figure">
-<img src="assets/article/prelude/in-out-thinking.jpeg" alt="内向与外向思维" />
+<img src="assets/content/article/prelude/in-out-thinking.jpeg" alt="内向与外向思维" />
 <p class="caption">内向与外向思维</p>
 </div>
 <p>而这种思维依据于不同的事情可能会发生一些差异，但是总体上来说是相似的。当遇到一个需要创轮子的问题时，我们就会看到两种不同的方式。</p>
@@ -132,7 +132,7 @@
 <p>中小学：编程语言 -&gt; 高中：操作系统、内核、游戏编程 -&gt; 大学： 硬件、Web 开发 -&gt; 工作：后端 + 前端</p>
 <p>而在当时我对 SEO 非常感兴趣，我发现这分析和 Marketing 似乎做得还可以。然后便往 Growth Hacking 发展了：</p>
 <div class="figure">
-<img src="assets/article/prelude/growth-hacking.jpg" alt="Growth Hacking" />
+<img src="assets/content/article/prelude/growth-hacking.jpg" alt="Growth Hacking" />
 <p class="caption">Growth Hacking</p>
 </div>
 <p>而这就是全栈学习带来的优势，学过的东西多，学习能力就变强。学习能力往上提的同时，你就更容易进入一个新的领域。</p>
